@@ -213,12 +213,12 @@ var DEFAULT_COLOR_TYPE = 'primary';
 
 // A color in a theme will use these hues by default, if not specified by user.
 var LIGHT_DEFAULT_HUES = {
-  'accent': {
-    'default': 'A200',
-    'hue-1': 'A100',
-    'hue-2': 'A400',
-    'hue-3': 'A700'
-  },
+  // 'accent': {
+  //   'default': 'A200',
+  //   'hue-1': 'A100',
+  //   'hue-2': 'A400',
+  //   'hue-3': 'A700'
+  // },
   'background': {
     'default': '50',
     'hue-1': 'A100',

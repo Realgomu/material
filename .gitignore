@@ -6,3 +6,4 @@ dist
 .nvmrc
 tmp/
 .editorconfig
+.vscode

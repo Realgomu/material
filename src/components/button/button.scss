@@ -14,6 +14,13 @@ $button-margin: rem(0.600) rem(0.800) !default;
 $button-min-width: rem(8.800) !default;
 $button-padding: 0 $button-left-right-padding !default;
 
+//small
+$button-small-line-height: rem(3.20);
+$button-small-min-width: rem(6.40);
+
+//mini
+$button-mini-line-height: rem(2.40);
+$button-mini-min-width: rem(4.80);
 
 // Fab buttons
 $button-fab-line-height: rem(5.600) !default;
@@ -182,6 +189,34 @@ button.md-button::-moz-focus-inner {
     overflow: hidden;
     // The following hack causes Safari/Chrome to respect overflow hidden for ripples
     -webkit-mask-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC');
+  }
+
+  //border button
+  &.md-border {
+    height: $button-line-height;
+    line-height: $button-line-height - 2px;
+  }
+
+  //small button
+  &.md-small {
+    line-height: $button-small-line-height;
+    min-height: $button-small-line-height;
+    height: $button-small-line-height;
+    min-width: $button-small-min-width;
+    &.md-border {
+      line-height: $button-small-line-height - 2px;
+    }
+  }
+  
+  //mini button
+  &.md-mini {
+    line-height: $button-mini-line-height;
+    min-height: $button-mini-line-height;
+    height: $button-mini-line-height;
+    min-width: $button-mini-min-width;
+    &.md-border {
+      line-height: $button-mini-line-height - 2px;
+    }
   }
 }
 

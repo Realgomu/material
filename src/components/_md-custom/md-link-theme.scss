@@ -1,0 +1,35 @@
+.md-link.md-THEME_NAME-theme {
+    &:not([disabled]) {
+        &:not(.no-hover):hover {
+            transition: all 200ms ease-in-out;
+            color: '{{primary-color}}';
+            * {
+                transition: all 200ms ease-in-out;
+                color: '{{primary-color}}';
+            }
+        }
+        &.active {
+            color: '{{primary-color}}';
+            * {
+                color: '{{primary-color}}';
+            }
+            .bg {
+                background-color: '{{primary-color}}';
+            }
+        }
+        &.md-primary {
+            color: '{{primary-color}}';
+            * {
+                color: '{{primary-color}}';
+            }
+            &:not(.no-hover):hover {
+                transition: all 200ms ease-in-out;
+                color: '{{primary-600}}';
+                * {
+                    transition: all 200ms ease-in-out;
+                    color: '{{primary-600}}';
+                }
+            }
+        }
+    }
+}

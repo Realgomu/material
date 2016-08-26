@@ -51,6 +51,20 @@
         color: '{{primary-color}}';
       }
     }
+    &.md-border {
+      background-color: inherit;
+      border: 1px solid '{{primary-color}}';
+      &[disabled] {
+        border: 1px solid '{{foreground-3}}';
+      }
+      &:hover:not([disabled]) {
+        background-color: '{{primary-color}}';
+        color: '{{primary-contrast}}';
+        md-icon {
+          color: '{{primary-contrast}}';
+        }
+      }
+    }
   }
   &.md-fab {
     background-color: '{{accent-color}}';
