@@ -842,6 +842,10 @@ function MdDialogProvider($$interimElementProvider) {
         targetEl = angular.element(options.targetEvent.target);
       }
 
+      if (!targetEl) {
+        targetEl = angular.element(options.parent);
+      }
+
       var themeCtrl = targetEl && targetEl.controller('mdTheme');
 
       if (!themeCtrl) {
